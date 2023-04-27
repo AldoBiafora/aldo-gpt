@@ -1,0 +1,30 @@
+<div class="login-card">
+    <form class="form-login" [formGroup]="loginForm" (ngSubmit)="onSubmitLogin()">
+  <div class="text-center" *ngIf="!isLoading">
+        <h1 class="fw-bold">G.O.A.T. GPT</h1>
+      <img src="../../../assets/logo.jpg" alt="" height="120" width="200" class="mb-4">
+     <mat-form-field color="accent" appearance="fill" class="mt-4">
+         <mat-label> 
+             <mat-icon class="margin-x-10">person</mat-icon> Username
+         </mat-label>
+         <input matInput formControlName="email" placeholder="Es. Test@mail.it" type="email">
+     </mat-form-field>
+     <br>
+     <mat-form-field color="accent" appearance="fill" >
+         <mat-label>
+             <mat-icon class="margin-x-10">lock</mat-icon>Password
+         </mat-label>
+         <input matInput formControlName="password" placeholder="Es. Password" type="password">
+     </mat-form-field>  
+     <button [style.width.%]="62" mat-raised-button color="accent" type="submit" [disabled]="!loginForm.valid">Log In</button>                 
+ </div> 
+</form>   
+ <div class="spinner" *ngIf="isLoading">
+     <mat-progress-spinner 
+     class="spinner"
+     color="accent" 
+     mode="indeterminate">
+     </mat-progress-spinner>
+ </div>  
+
+</div>
