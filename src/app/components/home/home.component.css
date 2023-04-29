@@ -1,0 +1,32 @@
+@media screen and (max-width: 480px){
+
+    .example-container {
+        height: 100%;
+    }
+
+    .toolbar {
+      
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 24px;
+    }
+
+    .is-active, .is-active:focus {
+        color: #000000;
+        background-color: #33333350 ;
+    }
+      
+      .example-sidenav-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .example-sidenav {
+        padding: 20px;
+      }
+
+}
+

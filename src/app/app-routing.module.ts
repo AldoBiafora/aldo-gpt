@@ -12,15 +12,17 @@ const routes: Routes = [
   },
   {
     path: 'Home',
-    component: HomeComponent
-  },
-  {
-    path: 'Chat',
-    component: ChatComponent
-  },
-  {
-    path: 'about',
-    component: AboutComponent
+    component: HomeComponent,
+    children: [
+      {
+        path: 'Chat',
+        component: ChatComponent
+      },
+      {
+        path: 'About',
+        component: AboutComponent
+      },
+    ]
   },
   { path: '', redirectTo: 'Login', pathMatch: 'full' },
   { path: '**', redirectTo: 'Login', pathMatch: 'full' }

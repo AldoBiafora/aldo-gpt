@@ -14,6 +14,8 @@ export class ToolService {
     let result: Observable<boolean> = new Observable();
     if(user.email === user.password){
       result = of(true);
+    }else {
+      result = of(false)
     }
     return result;
   }

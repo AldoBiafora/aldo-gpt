@@ -38,11 +38,14 @@ export class LoginComponent {
       password: formData.password /* this.toolService.hashMd5(formData.password) */
     }
     this.toolService.login(returnData).subscribe(res => {
+      console.log(res)
       if(res){
         this.router.navigate(['./Home']);
       }
       else {
         this.toolService.openSnackBarError('Attenzione! Email o Password errate, Riprovare', '')
+        this.isLoading = false;
+        this.loginForm.reset();
       }
     })
   }

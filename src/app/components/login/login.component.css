@@ -4,12 +4,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #333333 !important;
+        background-color: #fff !important;
         color: #fff !important;
     }
 
     .form-login {
-        background-color: #fff;
+        background-color: #33333350;
         color: black;
         margin-bottom: 200px;
         height: 450px;
@@ -27,18 +27,6 @@
         font-weight: 400;
     }
 
-    ::ng-deep .warning{
-        color:white;
-        background: #F44336 !important;
-        justify-content: center;
-    }
-    
-    ::ng-deep .confirm{
-        color:white;
-        background: green !important;
-        justify-content: center;
-    }
-
     .spinner {
         height: 100%;
         width: 100%;
@@ -47,6 +35,10 @@
         align-items: center;
         margin-right: 25px;
         margin-bottom: 50px;
+    }
+
+    .img-custom {
+        border-radius: 100%;
     }
 
 

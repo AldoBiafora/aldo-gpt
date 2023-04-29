@@ -1,1 +1,41 @@
-<p>home works!</p>
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="over">
+        <mat-list role="list" class="mt-4">
+           <!--  <mat-list-item role="listitem" >
+                <a mat-button [routerLink]="'./Home'" [routerLinkActive]="['is-active']">
+                    Home
+                </a>
+            </mat-list-item> -->
+            <mat-list-item role="listitem">
+                <a mat-button [routerLink]="'./Chat'" [routerLinkActive]="['is-active']">
+                    Chat
+                </a>
+            </mat-list-item>
+            <mat-list-item role="listitem">
+                <a mat-button [routerLink]="'./About'" [routerLinkActive]="['is-active']">
+                    About
+                </a>
+            </mat-list-item>
+          </mat-list>
+    </mat-drawer>
+  
+    <div class="example-sidenav-content">
+        <mat-toolbar color="primary" class="d-flex justify-content-between align-items-center" style="height: 80px;">
+            <div class="d-flex justify-content-center align-items-center">
+                <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="drawer.toggle()">
+                  <mat-icon>menu</mat-icon>
+                </button>
+                <span>G.O.A.T. GPT</span>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+                <button (click)="logout()" mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+                  <mat-icon>logout</mat-icon>
+                </button>
+            </div>
+        </mat-toolbar> 
+    </div>
+    <div>
+        <router-outlet></router-outlet>
+    </div>
+  
+  </mat-drawer-container>
