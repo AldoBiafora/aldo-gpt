@@ -1,0 +1,39 @@
+.push-right {
+    margin-left: 90%;
+}
+
+.person {
+    font-style: italic;
+    font-weight: bold;
+    color: darkgreen;
+}
+
+.bot {    
+    font-weight: bold; 
+    color: black;
+}
+
+.frame-box{
+    border: dotted 2px orange; padding: 20px;
+    min-height: 300px;
+    max-height: 300px;
+    overflow-y: scroll
+}
+
+
+.padding{
+    padding: 5px;
+}
+
+
+textarea {
+    max-width: 330px;
+    min-width: 330px;
+}
+
+.example-card {
+    border-radius: 20px;
+background: #e0e0e0;
+box-shadow:  25px 25px 50px #8b8b8b,
+             -25px -25px 50px #ffffff;
+}
